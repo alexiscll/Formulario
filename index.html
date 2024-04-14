@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icono.jpg" type="image/jpg" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Formulario de contacto</h2>
+      <fieldset>
+        <legend>IMFORMACION BASICA</legend>
+        <div class="form_input">
+          <label for="Nombre">Nombre completo</label>
+          <input type="text" placeholder="alexis espitia" id="Nombre" />
+        </div>
+        <div class="form_input">
+          <label for="email">Email</label>
+          <input type="email" placeholder="pepitoQgmail.com" id="email" />
+        </div>
+        <div class="form_input">
+          <label for="email">Asunto</label>
+          <input
+            type="email"
+            placeholder="El asunto de tu mensaje"
+            id="email"
+          />
+        </div>
+      </fieldset>
+
+      <!-- SELEC Y OPTION -->
+      <div class="form_input">
+        <label>
+          Tipo de usuario
+          <select name="type-of-user" id="">
+            <option value="user1">profesor</option>
+            <option value="user3">estudiando</option>
+            <option value="user3">otro</option>
+          </select>
+        </label>
+      </div>
+      <!-- DATALIST Y OPCION -->
+      <div class="form_input">
+        <label
+          >Referente
+          <input list="referente" name="referente" />
+          <datalist id="referente" name="type-of-user">
+            <option>amigos</option>
+            <option>familia</option>
+            <option>otro</option>
+          </datalist>
+        </label>
+      </div>
+
+      <div class="form_input">
+        <label for="Mensaje">Mensaje</label>
+        <textarea placeholder="escribe algo..." id="Mensaje"></textarea>
+      </div>
+    </form>
+  </body>
+</html>
